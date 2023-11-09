@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" content="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timer App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+
+    <script src="https://kit.fontawesome.com/d03dc02237.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Timer App</h1>
+
+    <div class="input-container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <label for="timerTitle">Judul Timer:</label> -->
+                <input type="text" id="timerTitle">                
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <input type="number" id="hours">
+                    <p class="label">hours</p>
+                </div>
+            </div>
+            <!-- <div class="col-md-1">
+                <p class="titikdua">:</p>
+            </div> -->
+            <div class="col-md-4">
+                <div class="mb-3 rounded-5">
+                    <input type="number" id="minutes" min="00" max="59" oninput="limitInput(this)">
+                    <p class="label">minutes</p>
+                </div>
+            </div>
+            <!-- <div class="col-md-1">
+                <p class="titikdua">:</p>
+            </div> -->
+            <div class="col-md-4">
+                <div class="mb-3 rounded-5">
+                    <input type="number" id="seconds" min="00" max="59" oninput="limitInput(this)">
+                    <p class="label">seconds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="startCountdown()">Start</button>
+    <button onclick="stopCountdown()">Stop</button>
+    <button onclick="restartCountdown()">Restart</button>
+    <h2 id="countdown"></h2>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

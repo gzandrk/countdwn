@@ -1,0 +1,72 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding: 5%;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #726C6C , #000000);
+    color: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.label{
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.titikdua{
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 105px;
+}
+input[type="text"] {
+    background-color: transparent;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #F5F5F5, #F5F5F500) 1;
+    padding: 5px;
+    color: white;
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+}
+input[type="text"]:focus {
+    outline: none;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #F5F5F5, #F5F5F500) 1;
+}
+input[type="number"] {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #F5F5F5, #F5F5F500) 1;
+    width: 250px;
+    height: 250px;
+    font-size: 105px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #F5F5F5, #F5F5F500) 1;
+}
